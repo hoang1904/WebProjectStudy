@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container-fluid max_width">
+        <header id="header">
+            <a href="home.html" class="logo">
+                <img src="../img/logo.png" alt="Website Logo">
+            </a>
+            <nav class="navbar" id="nav-bar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="member.html">Member</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div class="responsive" id="responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="icon">
+                <button type="button" onclick="downSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button type="button" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-user" aria-hidden="true"></i></button>
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+            <div class="form-search" id="form-search">
+                <input type="text" id="txt-search" placeholder="Search here...">
+                <button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form">
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="email" name="email"
+                                        id="email" placeholder="Email">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="password" name="pass"
+                                        id="pass" placeholder="Password">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-around">
+                                    <label for="" class="form-check-label">
+                                        <input class="form-check d-inline" type="checkbox" name="rememberMe"
+                                            id="rememberMe">
+                                        Remember me
+                                    </label>
+                                    <label for="">
+                                        <a href="#">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+        </header>
+
+        <section>
+            <section class="banner-product">
+                <h1 style="font-weight:bold">Frequently Asked Questions</h1>
+            </section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Ordering Process</h2>
+                        <h4 class="mt-4">How can I place an order?</h4>
+                        <p>You can place an order by visiting our online order form and selecting your desired cake,
+                            size, flavors, and any customization options. Once you submit the form, we will contact you
+                            to confirm the details and arrange for payment.</p>
+                        <h4 class="mt-4">How much in advance should I place my order?</h4>
+                        <p>We recommend placing your order at least 48 hours in advance to ensure availability. However,
+                            for custom or large orders, it's best to contact us as early as possible to secure your
+                            desired date.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Delivery and Pickup</h2>
+                        <h4 class="mt-4">Do you offer delivery?</h4>
+                        <p>Yes, we offer delivery within Ho Chi Minh city. Delivery charges may apply based on the
+                            distance. During the checkout process, you can specify your preferred delivery date and
+                            time.</p>
+                        <h4 class="mt-4">Can I pick up my order?</h4>
+                        <p>Certainly! We provide a pickup option at our bakery location. You can select the pickup
+                            option during the ordering process, and we'll coordinate the pickup time with you.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Payment and Pricing</h2>
+                        <h4 class="mt-4">What payment methods do you accept?</h4>
+                        <p>We accept payment via credit card, debit card, and cash on delivery. All payments are
+                            processed securely.</p>
+                        <h4 class="mt-4">Are your prices inclusive of taxes?</h4>
+                        <p>Yes, our prices are inclusive of all applicable taxes. There are no hidden charges.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Customization and Special Requests</h2>
+                        <h4 class="mt-4">Can I customize the cake design?</h4>
+                        <p>Yes, we offer customization options for certain cake designs. Please mention your specific
+                            requirements in the order form, and we will do our best to accommodate your request.</p>
+                        <h4 class="mt-4">Can you accommodate dietary restrictions or allergies?</h4>
+                        <p>We strive to accommodate dietary restrictions and allergies. Please mention any special
+                            dietary requirements or allergies in the order form, and we will advise you on the available
+                            options.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p>If you have any other questions or need further assistance, please don't hesitate to <a
+                                href="contact.html">contact us</a>. We're here to help!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About Us</h3>
+                        <p>This is a website made for learning purposes. The images and logos used in this website do
+                            not belong to us.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fa fa-envelope"></i> iuh@gmail.com</li>
+                            <li><i class="fa fa-phone"></i> 0987654321</li>
+                            <li><i class="fa fa-map-marker"></i> 123 Main Street</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Follow Us</h3>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

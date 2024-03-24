@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your shopping cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.6.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        $(document).ready(function () {
+            total_bill = 0
+            listbanh = JSON.parse(sessionStorage.getItem('listbanh'));
+            for (i = 1; i <= 8; i++) {
+                cart = JSON.parse(sessionStorage.getItem(i))
+                if (cart !== null) {
+                    banh = listbanh[cart.id - 1]
+                    text = "<tr id ='" + i + "'><td><img src='" + banh.hinh[0] + "'></td><td>" + banh.ten + "</td><td style='position: relative;'> <div class='qtt'><button class='plus' onclick='update_price(" + i + ",1)'>+</button><p id='quantity" + i + "'>" + cart.sl + "</p><button class='minus' onclick='update_price(" + i + ",-1)'>-</button></div></td><td>" + "$" + banh.gia + "</td><td style='position: relative;'><div id='total_price" + i + "'>" + "$" + cart.sl * banh.gia + "</div><button type='button' class='close' id='remove_product" + i + "' onclick='remove_product(" + i + ")'>&times;</button></td></tr>"
+                    document.getElementById("tblcart").innerHTML += text
+                    total_bill += parseInt(cart.sl) * parseInt(banh.gia)
+                }
+            }
+            document.getElementById("shoppingcart").innerHTML += "<div class='total_bill' id = 'total_bill'>" + "total bill: $" + total_bill + "</div>"
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid max_width">
+        <header id="header">
+            <a href="home.html" class="logo">
+                <img src="../img/logo.png" alt="Website Logo">
+            </a>
+            <nav class="navbar" id="nav-bar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="member.html">Member</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </nav>
+            <div class="responsive" id="responsive">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="icon">
+                <button type="button" onclick="downSearch()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button type="button" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-user" aria-hidden="true"></i></button>
+                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            </div>
+            <div class="form-search" id="form-search">
+                <input type="text" id="txt-search" placeholder="Search here...">
+                <button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form">
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="email" name="email"
+                                        id="email" placeholder="Email">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="password" name="pass"
+                                        id="pass" placeholder="Password">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-around">
+                                    <label for="" class="form-check-label">
+                                        <input class="form-check d-inline" type="checkbox" name="rememberMe"
+                                            id="rememberMe">
+                                        Remember me
+                                    </label>
+                                    <label for="">
+                                        <a href="#">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <section class="shoppingcart" id="shoppingcart">
+            <section class="banner-product">
+                <h1 style="font-weight: bold">Cart</h1>
+            </section>
+            <table id="tblcart" class="tblcart table table-bordered table-hover">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>Total price</td>
+                </tr>
+            </table>
+            <button id="buy-button" class="btn btn-primary" onclick="buy()">Buy</button>
+            <button id="reset-button" class="btn btn-primary" onclick="resetCart()">Reset</button>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>About Us</h3>
+                        <p>This is a website made for learning purposes. The images and logos used in this website do
+                            not belong to us.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fa fa-envelope"></i> iuh@gmail.com</li>
+                            <li><i class="fa fa-phone"></i> 0987654321</li>
+                            <li><i class="fa fa-map-marker"></i> 123 Main Street</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Follow Us</h3>
+                        <ul class="social">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
