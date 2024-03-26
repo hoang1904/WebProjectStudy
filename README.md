@@ -1,1 +1,1 @@
-Remember commit every sigle times u push your code. Luv <3
+Remember to commit every single time u push your code. Luv <3
