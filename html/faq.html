@@ -17,7 +17,7 @@
     <div class="container-fluid max_width">
         <header id="header">
             <a href="home.html" class="logo">
-                <img src="../img/img/logo.png" alt="Website Logo">
+                <img src="../img/logo.png" alt="Website Logo">
             </a>
             <nav class="navbar" id="nav-bar">
                 <ul>
@@ -44,55 +44,98 @@
                 <input type="text" id="txt-search" placeholder="Search here...">
                 <button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form">
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="email" name="email"
+                                        id="email" placeholder="Email">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="password" name="pass"
+                                        id="pass" placeholder="Password">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-around">
+                                    <label for="" class="form-check-label">
+                                        <input class="form-check d-inline" type="checkbox" name="rememberMe"
+                                            id="rememberMe">
+                                        Remember me
+                                    </label>
+                                    <label for="">
+                                        <a href="#">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
         </header>
 
         <section>
             <section class="banner-product">
-                <h1 style="font-weight:bold">Frequently Asked Questions</h1>
+                <img  src="../img/banner.png" style="height: 350px; width: 100%; padding-top: 30px;">
             </section>
 
-            <div class="container">
+            <div style="margin-top: 100px;" class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <h2 class="mt-4 text-info" style="font-weight: bold">Ordering Process</h2>
-                        <h4 class="mt-4">How can I place an order?</h4>
-                        <p>You can place an order by visiting our online order form and selecting your desired cake,
-                            size, flavors, and any customization options. Once you submit the form, we will contact you
-                            to confirm the details and arrange for payment.</p>
-                        <h4 class="mt-4">How much in advance should I place my order?</h4>
-                        <p>We recommend placing your order at least 48 hours in advance to ensure availability. However,
-                            for custom or large orders, it's best to contact us as early as possible to secure your
-                            desired date.</p>
+                        <h4 class="mt-4">How to Place Your Fashion Order</h4>
+                        <p>To place an order, simply browse through our online collection and add your desired items to your shopping cart.
+                             Once you've made your selections, proceed to checkout and follow the prompts to complete your purchase.</p>
+                        <h4 class="mt-4">Timing Is Everything:</h4>
+                        <p>For optimal satisfaction, we recommend placing your order with us in advance.
+                             While 48 hours is ideal to ensure availability, we understand that custom or large orders may require more time.
+                             Feel free to reach out to us as early as possible to secure your preferred items and delivery date.</p>
                     </div>
                     <div class="col-lg-6">
-                        <h2 class="mt-4 text-info" style="font-weight: bold">Delivery and Pickup</h2>
-                        <h4 class="mt-4">Do you offer delivery?</h4>
-                        <p>Yes, we offer delivery within Ho Chi Minh city. Delivery charges may apply based on the
-                            distance. During the checkout process, you can specify your preferred delivery date and
-                            time.</p>
-                        <h4 class="mt-4">Can I pick up my order?</h4>
-                        <p>Certainly! We provide a pickup option at our bakery location. You can select the pickup
-                            option during the ordering process, and we'll coordinate the pickup time with you.</p>
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Delivery and Pickup Options</h2>
+                        <h4 class="mt-4">Do We Offer Delivery?</h4>
+                        <p>Absolutely! We offer convenient delivery services within Ho Chi Minh City. Please note that delivery charges may apply based on distance.
+                         Simply specify your preferred delivery date and time during checkout, and we'll ensure your order reaches you promptly.</p>
+                        <h4 class="mt-4">Prefer Pickup?</h4>
+                        <p>No problem! We also provide a pickup option at our boutique location. 
+                            When placing your order, just select the pickup option, and we'll coordinate a convenient pickup time for you.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
-                        <h2 class="mt-4 text-info" style="font-weight: bold">Payment and Pricing</h2>
-                        <h4 class="mt-4">What payment methods do you accept?</h4>
-                        <p>We accept payment via credit card, debit card, and cash on delivery. All payments are
-                            processed securely.</p>
-                        <h4 class="mt-4">Are your prices inclusive of taxes?</h4>
-                        <p>Yes, our prices are inclusive of all applicable taxes. There are no hidden charges.</p>
+                        <h2 class="mt-4 text-info" style="font-weight: bold">Payment and Pricing Details</h2>
+                        <h4 class="mt-4">Which Payment Methods Do We Accept?</h4>
+                        <p>We offer the convenience of payment via credit card, debit card, and cash on delivery. 
+                            Rest assured, all transactions are securely processed to safeguard your information.</p>
+                        <h4 class="mt-4">Are Our Prices Tax-Inclusive?</h4>
+                        <p>Yes, our prices are inclusive of all applicable taxes. There are no hidden charges.
+                            Absolutely! Our listed prices already include all applicable taxes, ensuring transparency and no surprises at checkout. 
+                            Shop with confidence knowing there are no hidden charges.</p>
                     </div>
                     <div class="col-lg-6">
                         <h2 class="mt-4 text-info" style="font-weight: bold">Customization and Special Requests</h2>
-                        <h4 class="mt-4">Can I customize the cake design?</h4>
-                        <p>Yes, we offer customization options for certain cake designs. Please mention your specific
-                            requirements in the order form, and we will do our best to accommodate your request.</p>
-                        <h4 class="mt-4">Can you accommodate dietary restrictions or allergies?</h4>
-                        <p>We strive to accommodate dietary restrictions and allergies. Please mention any special
-                            dietary requirements or allergies in the order form, and we will advise you on the available
-                            options.</p>
+                        <h4 class="mt-4">Can I Customize My Order?</h4>
+                        <p>Absolutely! We offer customization options for certain clothing designs. 
+                            Simply mention your specific requirements in the order notes during checkout, 
+                            and we'll do our best to bring your vision to life.</p>
+                        <h4 class="mt-4">Do You Accommodate Dietary Restrictions or Allergies?</h4>
+                        <p>We understand the importance of catering to your unique needs. If you have any special dietary restrictions or allergies, 
+                            please let us know in the order notes, and we'll work with you to find suitable options from our collection.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -133,50 +176,6 @@
         </footer>
     </div>
     <script src="../js/script.js"></script>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="form">
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="email" name="email"
-                                id="email" placeholder="Email">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="password" name="pass"
-                                id="pass" placeholder="Password">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
-                        </div>
-                        <div class="form-group d-flex justify-content-around">
-                            <label for="" class="form-check-label">
-                                <input class="form-check d-inline" type="checkbox" name="rememberMe"
-                                    id="rememberMe">
-                                Remember me
-                            </label>
-                            <label for="">
-                                <a href="#">Forgot password?</a>
-                            </label>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Don't have an account? <a href="register.html">Register</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>
