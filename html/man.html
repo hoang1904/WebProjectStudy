@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Man</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
@@ -53,105 +53,148 @@
                 <input type="text" id="txt-search" placeholder="Search here...">
                 <button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form">
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="email" name="email"
+                                        id="email" placeholder="Email">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="password" name="pass"
+                                        id="pass" placeholder="Password">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-around">
+                                    <label for="" class="form-check-label">
+                                        <input class="form-check d-inline" type="checkbox" name="rememberMe"
+                                            id="rememberMe">
+                                        Remember me
+                                    </label>
+                                    <label for="">
+                                        <a href="#">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
         </header>
-        <section class="banner-product">
-            <h1 style="font-weight: bold">Product</h1>
+        <section class="banner-product" style="background-image: url(../img/banner.png);">
+            <h1 style="font-weight: bold;color: aliceblue;">For Man</h1>
         </section>
         <section class="product" id="product">
-            <a href="Product-detail.html" onclick="hienthi(1)">
+            <a href="Product-detail.html" onclick="hienthi(9)">
                 <div class="box ">
                     <div class="icon">
                         <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Banana Pudding Cookies_1.jpg" alt="">
-                    <h6>Banana Pudding Cookies</h6>
-                    <p>$25</p>
-                </div>
-            </a>
-            <a href="Product-detail.html" onclick="hienthi(2)">
-                <div class="box ">
-                    <div class="icon">
-                        <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
-                        <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
-                        <i class="box-icon fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                    <img src="../img/Birthday Cupcakes_1.jpg" alt="">
-                    <h6>Birthday Cupcakes</h6>
+                    <img src="../img/img nam/Áo khoác Blazer/1.png" alt="">
+                    <h6>Áo khoác Blazer</h6>
                     <p>$30</p>
                 </div>
             </a>
-            <a href="Product-detail.html" onclick="hienthi(3)">
+            <a href="Product-detail.html" onclick="hienthi(10)">
                 <div class="box ">
                     <div class="icon">
                         <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Chocolate Cake_1.jpg" alt="">
-                    <h6>Chocolate Cake</h6>
-                    <p>$25</p>
-                </div>
-            </a>
-            <a href="Product-detail.html" onclick="hienthi(4)">
-                <div class="box ">
-                    <div class="icon">
-                        <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
-                        <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
-                        <i class="box-icon fa fa-eye" aria-hidden="true"></i>
-                    </div>
-                    <img src="../img/Chocolate Chunk Cookies_1.jpg" alt="">
-                    <h6>Chocolate Chunk Cookies</h6>
+                    <img src="../img/img nam/Áo khoác vải thun/1.png" alt="">
+                    <h6>Áo khoác vải thun</h6>
                     <p>$30</p>
                 </div>
             </a>
-            <a href="Product-detail.html" onclick="hienthi(5)">
+            <a href="Product-detail.html" onclick="hienthi(11)">
+                <div class="box ">
+                    <div class="icon">
+                        <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
+                        <i class="box-icon fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <img src="../img/img nam/Hoodie/1.png" alt="">
+                    <h6>Hoodie</h6>
+                    <p>$25</p>
+                </div>
+            </a>
+            <a href="Product-detail.html" onclick="hienthi(12)">
+                <div class="box ">
+                    <div class="icon">
+                        <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
+                        <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
+                        <i class="box-icon fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <img src="../img/img nam/Áo khoác Kaki/1.png" alt="">
+                    <h6>Áo khoác Kaki</h6>
+                    <p>$20</p>
+                </div>
+            </a>
+            <a href="Product-detail.html" onclick="hienthi(13)">
                 <div class="box">
                     <div class="icon">
                         <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Chocolate Pudding Icebox Pie_1.jpg" alt="">
-                    <h6>Chocolate Pudding Icebox Pie</h6>
-                    <p>$40</p>
+                    <img src="../img/img nam/Áo thun cổ tay tròn/1.png" alt="">
+                    <h6>Áo thun cổ tay tròn</h6>
+                    <p>$15</p>
                 </div>
             </a>
-            <a href="Product-detail.html" onclick="hienthi(6)">
+            <a href="Product-detail.html" onclick="hienthi(14)">
                 <div class="box ">
                     <div class="icon">
                         <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Confetti Cake_1.png" alt="">
-                    <h6>Confetti Cake</h6>
-                    <p>$30</p>
+                    <img src="../img/img nam/Sơ mi sọc tay dài/1.png" alt="">
+                    <h6>Sơ mi sọc tay dài</h6>
+                    <p>$20</p>
                 </div>
             </a>
-            <a href="Product-detail.html" onclick="hienthi(7)">
+            <a href="Product-detail.html" onclick="hienthi(15)">
                 <div class="box">
                     <div class="icon">
                         <i class="box-icon fa fa-cart-plus" aria-hidden="true"></i>
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Pastel Party Cake_1.jpg" alt="">
-                    <h6>Pastel Party Cake</h6>
-                    <p>$50</p>
+                    <img src="../img/img nam/Quần sort/1.png" alt="">
+                    <h6>Quần sort</h6>
+                    <p>$15</p>
                 </div>
             </a>
-            <a href="Product-detail.html" onclick="hienthi(8)">
+            <a href="Product-detail.html" onclick="hienthi(16)">
                 <div class="box">
                     <div class="icon">
                         <i class="fa fa-cart-plus box-icon" aria-hidden="true"></i>
                         <i class="fa fa-share box-icon" aria-hidden="true"></i></i>
                         <i class="fa fa-eye box-icon" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Red Velvet Cupcakes_1.jpg" alt="">
-                    <h6>Red Velvet Cupcakes</h6>
-                    <p id="a">$30</p>
+                    <img src="../img/img nam/Áo sơ mi tay dài/1.png" alt="">
+                    <h6>Áo sơ mi tay dài</h6>
+                    <p id="a">$25</p>
                 </div>
             </a>
         </section>
@@ -185,50 +228,6 @@
         </footer>
     </div>
     <script src="../js/script.js"></script>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="form">
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="email" name="email"
-                                id="email" placeholder="Email">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="password" name="pass"
-                                id="pass" placeholder="Password">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
-                        </div>
-                        <div class="form-group d-flex justify-content-around">
-                            <label for="" class="form-check-label">
-                                <input class="form-check d-inline" type="checkbox" name="rememberMe"
-                                    id="rememberMe">
-                                Remember me
-                            </label>
-                            <label for="">
-                                <a href="#">Forgot password?</a>
-                            </label>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Don't have an account? <a href="register.html">Register</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 

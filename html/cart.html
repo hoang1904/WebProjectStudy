@@ -15,17 +15,17 @@
     <script>
         $(document).ready(function () {
             total_bill = 0
-            listbanh = JSON.parse(sessionStorage.getItem('listbanh'));
-            for (i = 1; i <= 8; i++) {
+            listdo = JSON.parse(sessionStorage.getItem('listdo'));
+            for (i = 1; i <= 16; i++) {
                 cart = JSON.parse(sessionStorage.getItem(i))
                 if (cart !== null) {
-                    banh = listbanh[cart.id - 1]
-                    text = "<tr id ='" + i + "'><td><img src='" + banh.hinh[0] + "'></td><td>" + banh.ten + "</td><td style='position: relative;'> <div class='qtt'><button class='plus' onclick='update_price(" + i + ",1)'>+</button><p id='quantity" + i + "'>" + cart.sl + "</p><button class='minus' onclick='update_price(" + i + ",-1)'>-</button></div></td><td>" + "$" + banh.gia + "</td><td style='position: relative;'><div id='total_price" + i + "'>" + "$" + cart.sl * banh.gia + "</div><button type='button' class='close' id='remove_product" + i + "' onclick='remove_product(" + i + ")'>&times;</button></td></tr>"
+                    Do = listdo[cart.id - 1]
+                    text = "<tr id ='" + i + "'><td><img src='" + Do.hinh[0] + "'></td><td>" + Do.ten + "</td><td style='position: relative;'> <div class='qtt'><button class='plus' onclick='update_price(" + i + ",1)'>+</button><p id='quantity" + i + "'>" + cart.sl + "</p><button class='minus' onclick='update_price(" + i + ",-1)'>-</button></div></td><td>" + "$" + Do.gia + "</td><td style='position: relative;'><div id='total_price" + i + "'>" + "$" + cart.sl * Do.gia + "</div><button type='button' class='close' id='remove_product" + i + "' onclick='remove_product(" + i + ")'>&times;</button></td></tr>"
                     document.getElementById("tblcart").innerHTML += text
-                    total_bill += parseInt(cart.sl) * parseInt(banh.gia)
+                    total_bill += parseInt(cart.sl) * parseInt(Do.gia)
                 }
             }
-            document.getElementById("shoppingcart").innerHTML += "<div class='total_bill' id = 'total_bill'>" + "Total Bill: $" + total_bill + "</div>"
+            document.getElementById("shoppingcart").innerHTML += "<div class='total_bill' id = 'total_bill'>" + "total bill: $" + total_bill + "</div>"
         });
     </script>
 </head>
@@ -39,7 +39,15 @@
             <nav class="navbar" id="nav-bar">
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="Product.html">Product</a></li>
+                    <li class=" dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Product
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="../html/man.html">Man</a>
+                          <a class="dropdown-item" href="../html/woman.html">Woman</a>
+                        </div>
+                    </li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="member.html">Member</a></li>
                     <li><a href="contact.html">Contact</a></li>

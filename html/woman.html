@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>Woman</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.6.4.min.js"></script>
@@ -28,8 +28,8 @@
                           Product
                         </a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="../html/man.html">Man</a>
-                          <a class="dropdown-item" href="../html/woman.html">Woman</a>
+                            <a class="dropdown-item" href="../html/man.html">Man</a>
+                            <a class="dropdown-item" href="../html/woman.html">Woman</a>
                         </div>
                     </li>
                     <li><a href="aboutUs.html">About Us</a></li>
@@ -53,9 +53,52 @@
                 <input type="text" id="txt-search" placeholder="Search here...">
                 <button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Login</h3>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form">
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="email" name="email"
+                                        id="email" placeholder="Email">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <input class="form-control col-10 d-inline-block" type="password" name="pass"
+                                        id="pass" placeholder="Password">
+                                    <div class="icon d-inline-block pl-2">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group d-flex justify-content-around">
+                                    <label for="" class="form-check-label">
+                                        <input class="form-check d-inline" type="checkbox" name="rememberMe"
+                                            id="rememberMe">
+                                        Remember me
+                                    </label>
+                                    <label for="">
+                                        <a href="#">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-group text-center col-12">
+                                    <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Don't have an account? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
         </header>
-        <section class="banner-product">
-            <h1 style="font-weight: bold">Product</h1>
+        <section class="banner-product" style="background-image: url(../img/banner.png);">
+            <h1 style="font-weight: bold;color: aliceblue;">For Woman</h1>
         </section>
         <section class="product" id="product">
             <a href="Product-detail.html" onclick="hienthi(1)">
@@ -65,8 +108,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Banana Pudding Cookies_1.jpg" alt="">
-                    <h6>Banana Pudding Cookies</h6>
+                    <img src="../img/img nữ/Áo len dài tay/1.png" alt="">
+                    <h6>Áo len dài tay</h6>
                     <p>$25</p>
                 </div>
             </a>
@@ -77,8 +120,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Birthday Cupcakes_1.jpg" alt="">
-                    <h6>Birthday Cupcakes</h6>
+                    <img src="../img/img nữ/Áo kiểu demi/1.png" alt="">
+                    <h6>Áo kiểu demi</h6>
                     <p>$30</p>
                 </div>
             </a>
@@ -89,8 +132,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Chocolate Cake_1.jpg" alt="">
-                    <h6>Chocolate Cake</h6>
+                    <img src="../img/img nữ/Áo kiểu tay dài cột nơ/1.png" alt="">
+                    <h6>Áo tay dài có nơ</h6>
                     <p>$25</p>
                 </div>
             </a>
@@ -101,8 +144,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Chocolate Chunk Cookies_1.jpg" alt="">
-                    <h6>Chocolate Chunk Cookies</h6>
+                    <img src="../img/img nữ/áo 2 dây hoa nổi/1.png" alt="">
+                    <h6>Áo 2 dây hoa nổi</h6>
                     <p>$30</p>
                 </div>
             </a>
@@ -113,8 +156,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Chocolate Pudding Icebox Pie_1.jpg" alt="">
-                    <h6>Chocolate Pudding Icebox Pie</h6>
+                    <img src="../img/img nữ/váy ngắn xếp ly/1.png" alt="">
+                    <h6>Váy ngắn xếp ly</h6>
                     <p>$40</p>
                 </div>
             </a>
@@ -125,8 +168,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Confetti Cake_1.png" alt="">
-                    <h6>Confetti Cake</h6>
+                    <img src="../img/img nữ/Đầm Caro/1.png" alt="">
+                    <h6>Đầm caro</h6>
                     <p>$30</p>
                 </div>
             </a>
@@ -137,8 +180,8 @@
                         <i class="box-icon fa fa-share" aria-hidden="true"></i></i>
                         <i class="box-icon fa fa-eye" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Pastel Party Cake_1.jpg" alt="">
-                    <h6>Pastel Party Cake</h6>
+                    <img src="../img/img nữ/Đầm babydoll/1.png" alt="">
+                    <h6>Đầm babydoll</h6>
                     <p>$50</p>
                 </div>
             </a>
@@ -149,8 +192,8 @@
                         <i class="fa fa-share box-icon" aria-hidden="true"></i></i>
                         <i class="fa fa-eye box-icon" aria-hidden="true"></i>
                     </div>
-                    <img src="../img/Red Velvet Cupcakes_1.jpg" alt="">
-                    <h6>Red Velvet Cupcakes</h6>
+                    <img src="../img/img nữ/chân váy jean túi L/1.png" alt="">
+                    <h6>Chân váy jean túi L</h6>
                     <p id="a">$30</p>
                 </div>
             </a>
@@ -185,50 +228,6 @@
         </footer>
     </div>
     <script src="../js/script.js"></script>
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <form action="" class="form">
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="email" name="email"
-                                id="email" placeholder="Email">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <input class="form-control col-10 d-inline-block" type="password" name="pass"
-                                id="pass" placeholder="Password">
-                            <div class="icon d-inline-block pl-2">
-                                <i class="fa-solid fa-lock"></i>
-                            </div>
-                        </div>
-                        <div class="form-group d-flex justify-content-around">
-                            <label for="" class="form-check-label">
-                                <input class="form-check d-inline" type="checkbox" name="rememberMe"
-                                    id="rememberMe">
-                                Remember me
-                            </label>
-                            <label for="">
-                                <a href="#">Forgot password?</a>
-                            </label>
-                        </div>
-                        <div class="form-group text-center col-12">
-                            <button type="submit" class="btn btn-success" onclick="Dangnhap()">Login</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p>Don't have an account? <a href="register.html">Register</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </body>
 

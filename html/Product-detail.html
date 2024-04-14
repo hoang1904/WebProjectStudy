@@ -14,15 +14,15 @@
 
     <script>
         $(document).ready(function () {
-            listbanh = JSON.parse(sessionStorage.getItem('listbanh'));
-            banh = listbanh.find(banh => banh.id == sessionStorage.getItem("id"))
-            document.getElementById("ten").innerHTML += banh.ten;
-            banh.hinh.forEach(Element => {
+            listdo = JSON.parse(sessionStorage.getItem('listdo'));
+            Do = listdo.find(Do => Do.id == sessionStorage.getItem("id"))
+            document.getElementById("ten").innerHTML += Do.ten;
+            Do.hinh.forEach(Element => {
                 let b = "<div class='slide'><img src='" + Element + "' ></div>"
                 $(".slider").append(b);
             });
-            document.getElementById("mota").innerHTML += banh.mota;
-            document.getElementById("gia").innerHTML += "$" + banh.gia;
+            document.getElementById("mota").innerHTML += Do.mota;
+            document.getElementById("gia").innerHTML += "$" + Do.gia;
             showSlide(0);
         });
     </script>
@@ -37,7 +37,15 @@
             <nav class="navbar" id="nav-bar">
                 <ul>
                     <li><a href="home.html">Home</a></li>
-                    <li><a href="Product.html">Product</a></li>
+                    <li class=" dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                          Product
+                        </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="../html/man.html">Man</a>
+                          <a class="dropdown-item" href="../html/woman.html">Woman</a>
+                        </div>
+                    </li>
                     <li><a href="aboutUs.html">About Us</a></li>
                     <li><a href="member.html">Member</a></li>
                     <li><a href="contact.html">Contact</a></li>

@@ -1,63 +1,121 @@
+
+// car.html với Product-detail.html
 var currentSlide = 0;
-var listbanh = [
-    banh1 = {
+var listdo = [
+    do1 = {
         id: 1,
-        ten: "Banana Pudding Cookies",
-        hinh: ["../img/Banana Pudding Cookies_1.jpg", "../img/Banana Pudding Cookies_2.jpg"],
-        mota: "Banana pudding cookies are chewy cookies with a subtle banana flavor and creamy texture. They're made with butter, brown sugar, eggs, flour, baking powder, mashed bananas, and vanilla pudding mix.",
+        ten: "Áo len dài tay",
+        hinh: ["../img/img nữ/Áo len dài tay/1.png", "../img/img nữ/Áo len dài tay/2.png", "../img/img nữ/Áo len dài tay/3.png"],
+        mota: "Viết mô tả",
         gia: 25
     },
-    banh2 = {
+    do2 = {
         id: 2,
-        ten: "Birthday Cupcakes",
-        hinh: ["../img/Birthday Cupcakes_1.jpg", "../img/Birthday Cupcakes_2.jpg", "../img/Birthday Cupcakes_3.jpg"],
-        mota: "A birthday cupcake is a small cake served for one person on their birthday. They're baked in small liners, flavored with ingredients like vanilla or chocolate, and topped with frosting and decorations.",
+        ten: "Áo kiểu demi",
+        hinh: ["../img/img nữ/Áo kiểu demi/1.png", "../img/img nữ/Áo kiểu demi/2.png", "../img/img nữ/Áo kiểu demi/3.png"],
+        mota: "Viết mô tả",
         gia: 30
     },
-    banh3 = {
+    do3 = {
         id: 3,
-        ten: "Chocolate Cake",
-        hinh: ["../img/Chocolate Cake_1.jpg", "../img/Chocolate Cake_2.jpg", "../img/Chocolate Cake_3.jpg"],
-        mota: "Chocolate cake is a dessert made with chocolate, typically with ingredients such as flour, sugar, eggs, cocoa powder, and baking soda or baking powder. It can be enhanced with additional chocolate and layered with frosting such as buttercream.",
+        ten: "Áo tai dài có nơ",
+        hinh: ["../img/img nữ/Áo kiểu tay dài cột nơ/1.png", "../img/img nữ/Áo kiểu tay dài cột nơ/2.png", "../img/img nữ/Áo kiểu tay dài cột nơ/3.png"],
+        mota: "Viết mô tả",
         gia: 25
     },
-    banh4 = {
+    do4 = {
         id: 4,
-        ten: "Chocolate Chunk Cookies",
-        hinh: ["../img/Chocolate Chunk Cookies_1.jpg", "../img/Chocolate Chunk Cookies_2.jpg", "../img/Chocolate Chunk Cookies_3.jpg", "../img/Chocolate Chunk Cookies_4.jpg"],
-        mota: "Chocolate chunk cookies are a type of cookie with chunks of chocolate in the dough. They're made with ingredients like butter, sugar, eggs, flour, baking soda, vanilla extract, and chopped chocolate. The dough is portioned into balls and baked until golden brown, resulting in crispy cookies with a soft, chewy interior.",
+        ten: "Áo 2 dây hoa nổi",
+        hinh: ["../img/img nữ/áo 2 dây hoa nổi/1.png", "../img/img nữ/áo 2 dây hoa nổi/2.png", "../img/img nữ/áo 2 dây hoa nổi/3.png"],
+        mota: "Viết mô tả",
         gia: 30
     },
-    banh5 = {
+    do5 = {
         id: 5,
-        ten: "Chocolate Pudding Icebox Pie",
-        hinh: ["../img/Chocolate Pudding Icebox Pie_1.jpg", "../img/Chocolate Pudding Icebox Pie_2.jpg", "../img/Chocolate Pudding Icebox Pie_3.jpg"],
-        mota: "Chocolate pudding icebox pie is a no-bake dessert with a chocolate cookie crust and a filling made of chocolate pudding and whipped cream. The crust is made with crushed cookies and butter, and the filling is made with instant pudding mix and whipped cream. It's chilled until set and can be topped with various toppings.",
+        ten: "Váy ngắn xếp ly",
+        hinh: ["../img/img nữ/váy ngắn xếp ly/1.png", "../img/img nữ/váy ngắn xếp ly/2.png", "../img/img nữ/váy ngắn xếp ly/3.png"],
+        mota: "Viết mô tả",
         gia: 40
     },
-    banh6 = {
+    do6 = {
         id: 6,
-        ten: "Confetti Cake",
-        hinh: ["../img/Confetti Cake_1.png", "../img/Confetti Cake_2.png", "../img/Confetti Cake_3.jpg"],
-        mota: "Confetti cake is a type of cake that is made with a white or yellow cake batter that has colorful sprinkles mixed into the batter. The sprinkles create a fun and festive look, resembling confetti. The cake is typically baked in layers and frosted with a vanilla buttercream frosting.",
+        ten: "Đầm caro",
+        hinh: ["../img/img nữ/Đầm Caro/1.png", "../img/img nữ/Đầm Caro/2.png", "../img/img nữ/Đầm Caro/3.png"],
+        mota: "Viết mô tả",
         gia: 30
     },
-    banh7 = {
+    do7 = {
         id: 7,
-        ten: "Pastel Party Cake",
-        hinh: ["../img/Pastel Party Cake_1.jpg", "../img/Pastel Party Cake_2.jpg", "../img/Pastel Party Cake_3.jpg"],
-        mota: "A pastel party cake is a cake decorated with light-colored frosting in shades of pink, blue, green, or yellow. It's often served at parties, such as baby showers or springtime gatherings. The cake can be made in different flavors and sizes, and the frosting is typically made with butter, powdered sugar, and food coloring.",
+        ten: "Đầm babydoll",
+        hinh: ["../img/img nữ/Đầm babydoll/1.png", "../img/img nữ/Đầm babydoll/2.png", "../img/img nữ/Đầm babydoll/3.png"],
+        mota: "Viết mô tả",
         gia: 50
     },
-    banh8 = {
+    do8 = {
         id: 8,
-        ten: "Red Velvet Cupcakes",
-        hinh: ["../img/Red Velvet Cupcakes_1.jpg", "../img/Red Velvet Cupcakes_2.jpg"],
-        mota: "Red velvet cupcakes are cupcakes with a cocoa-based batter colored with red food coloring. They're typically topped with cream cheese frosting and can be decorated with red velvet cake crumbs or sprinkles.",
+        ten: "Chân váy jean túi L",
+        hinh: ["../img/img nữ/chân váy jean túi L/1.png", "../img/img nữ/chân váy jean túi L/2.png","../img/img nữ/chân váy jean túi L/3.png"],
+        mota: "Viết mô tả",
         gia: 30
+    },
+    do9 = {
+        id: 9,
+        ten: "Áo khoác Blazer",
+        hinh: ["../img/img nam/Áo khoác Blazer/1.png", "../img/img nam/Áo khoác Blazer/2.png","../img/img nam/Áo khoác Blazer/3.png"],
+        mota: "Viết mô tả",
+        gia: 30
+    },
+    do10 = {
+        id: 10,
+        ten: "Áo khoác vải thun",
+        hinh: ["../img/img nam/Áo khoác vải thun/1.png", "../img/img nam/Áo khoác vải thun/2.png","../img/img nam/Áo khoác vải thun/3.png"],
+        mota: "Viết mô tả",
+        gia: 30
+    },
+    do11 = {
+        id: 11,
+        ten: "Hoodie",
+        hinh: ["../img/img nam/Hoodie/1.png", "../img/img nam/Hoodie/2.png","../img/img nam/Hoodie/3.png"],
+        mota: "Viết mô tả",
+        gia: 25
+    },
+    do12 = {
+        id: 12,
+        ten: "Áo khoác Kaki",
+        hinh: ["../img/img nam/Áo khoác Kaki/1.png", "../img/img nam/Áo khoác Kaki/2.png","../img/img nam/Áo khoác Kaki/3.png"],
+        mota: "Viết mô tả",
+        gia: 20
+    },
+    do13 = {
+        id: 13,
+        ten: "Áo thun cổ tay tròn",
+        hinh: ["../img/img nam/Áo thun cổ tay tròn/1.png", "../img/img nam/Áo thun cổ tay tròn/3.png"],
+        mota: "Viết mô tả",
+        gia: 15
+    },
+    do14 = {
+        id: 14,
+        ten: "Sơ mi sọc tay dài",
+        hinh: ["../img/img nam/Sơ mi sọc tay dài/1.png", "../img/img nam/Sơ mi sọc tay dài/2.png","../img/img nam/Sơ mi sọc tay dài/3.png"],
+        mota: "Viết mô tả",
+        gia: 20
+    },
+    do15 = {
+        id: 15,
+        ten: "Quần sort",
+        hinh: ["../img/img nam/Quần sort/1.png", "../img/img nam/Quần sort/2.png","../img/img nam/Quần sort/3.png"],
+        mota: "Viết mô tả",
+        gia: 15
+    },
+    do16 = {
+        id: 16,
+        ten: "Áo sơ mi tay dài",
+        hinh: ["../img/img nam/Áo sơ mi tay dài/1.png", "../img/img nam/Áo sơ mi tay dài/2.png","../img/img nam/Áo sơ mi tay dài/3.png"],
+        mota: "Viết mô tả",
+        gia: 25
     }
 ];
-sessionStorage.setItem("listbanh", JSON.stringify(listbanh))
+sessionStorage.setItem("listdo", JSON.stringify(listdo))//đây
 
 
 function showSlide(n) {
@@ -346,15 +404,15 @@ function Lienhe() {
     }
 }
 function update_price(id, n) {
-    listbanh = JSON.parse(sessionStorage.getItem('listbanh'));
-    banh = listbanh[id - 1]
+    listdo = JSON.parse(sessionStorage.getItem('listdo'));//đây
+    Do = listdo[id - 1] //đây
     qtt = document.getElementById("quantity" + id)
     ttp = document.getElementById("total_price" + id)
     if (n > 0)
         qtt.innerText = parseInt(qtt.innerText) + 1
     else if (parseInt(qtt.innerText) > 1)
         qtt.innerText = parseInt(qtt.innerText) - 1
-    ttp.innerText = "$" + parseInt(qtt.innerText) * banh.gia
+    ttp.innerText = "$" + parseInt(qtt.innerText) * Do.gia//đây
     cart = {
         id: id,
         sl: parseInt(qtt.innerText)
@@ -367,8 +425,8 @@ function update_total_bill() {
     for (i = 1; i <= 8; i++) {
         cart = JSON.parse(sessionStorage.getItem(i))
         if (cart !== null) {
-            banh = listbanh[cart.id - 1]
-            total_bill += parseInt(cart.sl) * parseInt(banh.gia)
+            Do = listdo[cart.id - 1]//đây
+            total_bill += parseInt(cart.sl) * parseInt(Do.gia)//đây
         }
     }
     document.getElementById("total_bill").innerText = "total bill: $" + total_bill
