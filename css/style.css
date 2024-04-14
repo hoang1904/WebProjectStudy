@@ -425,7 +425,7 @@ section.product-detail .content {
     margin-left: 100px;
 }
 
-section.product-detail .content button.addbanh {
+section.product-detail .content button.addDo {
     margin-left: 150px;
     width: 200px;
     height: 50px;
@@ -433,7 +433,7 @@ section.product-detail .content button.addbanh {
     background-color: rgb(182, 182, 56);
 }
 
-section.product-detail .content button.addbanh:hover {
+section.product-detail .content button.addDo:hover {
     background-color: rgb(144, 144, 45);
 }
 

@@ -1,117 +1,115 @@
-
-// car.html với Product-detail.html
 var currentSlide = 0;
 var listdo = [
     do1 = {
         id: 1,
-        ten: "Áo len dài tay",
+        ten: "The Long Sleeve Knit Sweater",
         hinh: ["../img/img nữ/Áo len dài tay/1.png", "../img/img nữ/Áo len dài tay/2.png", "../img/img nữ/Áo len dài tay/3.png"],
-        mota: "Viết mô tả",
+        mota: "The Long Sleeve Knit Sweater is a wardrobe staple known for its timeless style and versatility. Crafted from knit fabric, this sweater offers warmth and comfort while exuding an effortlessly chic vibe. Perfect for layering or wearing on its own, it seamlessly transitions from casual to more formal occasions.",
         gia: 25
     },
     do2 = {
         id: 2,
-        ten: "Áo kiểu demi",
+        ten: "The Nomie Voile Strap Top",
         hinh: ["../img/img nữ/Áo kiểu demi/1.png", "../img/img nữ/Áo kiểu demi/2.png", "../img/img nữ/Áo kiểu demi/3.png"],
-        mota: "Viết mô tả",
+        mota: "The Nomie Voile Strap Top is considered a must-have item for this summer season. With hot and sunny weather in mind, wearing a lightweight voile floral strap top is the perfect choice for any fashionista.",
         gia: 30
     },
     do3 = {
         id: 3,
-        ten: "Áo tai dài có nơ",
+        ten: "Morela Top",
         hinh: ["../img/img nữ/Áo kiểu tay dài cột nơ/1.png", "../img/img nữ/Áo kiểu tay dài cột nơ/2.png", "../img/img nữ/Áo kiểu tay dài cột nơ/3.png"],
-        mota: "Viết mô tả",
+        mota: "Bringing warmth and comfort, the Morela Top is the perfect choice for chilly weather days. Made from soft knit fabric, this top will keep you cozy and comfortable. Material: Knit fabric.",
         gia: 25
     },
     do4 = {
         id: 4,
-        ten: "Áo 2 dây hoa nổi",
+        ten: "Kane Top",
         hinh: ["../img/img nữ/áo 2 dây hoa nổi/1.png", "../img/img nữ/áo 2 dây hoa nổi/2.png", "../img/img nữ/áo 2 dây hoa nổi/3.png"],
-        mota: "Viết mô tả",
+        mota: "The C.I.U - Kane Top, featuring a bow detail, is a charming and stylish spaghetti strap top. With the bow embellishment at the center of the chest, this top will help you stand out during casual outings or hangouts with friends. Made from satin material, the Kane Top is incredibly soft and comfortable",
         gia: 30
     },
     do5 = {
         id: 5,
-        ten: "Váy ngắn xếp ly",
+        ten: "Mochi Skirt",
         hinh: ["../img/img nữ/váy ngắn xếp ly/1.png", "../img/img nữ/váy ngắn xếp ly/2.png", "../img/img nữ/váy ngắn xếp ly/3.png"],
-        mota: "Viết mô tả",
+        mota: "The C.I.U - Mochi Skirt, with its pleated design, is an excellent choice for girls who love a cute and feminine style. Made from premium Korean cotton fabric, this skirt not only provides comfort and softness but also enhances the beauty of the wearer.",
         gia: 40
     },
     do6 = {
         id: 6,
-        ten: "Đầm caro",
+        ten: "Audrey Dress",
         hinh: ["../img/img nữ/Đầm Caro/1.png", "../img/img nữ/Đầm Caro/2.png", "../img/img nữ/Đầm Caro/3.png"],
-        mota: "Viết mô tả",
+        mota: "Bringing you a gentle and feminine beauty, the off-shoulder floral flare dress, THE C.I.U - Audrey Dress, is undoubtedly a must-have item in your wardrobe this summer.",
         gia: 30
     },
     do7 = {
         id: 7,
-        ten: "Đầm babydoll",
+        ten: "Ward Babydoll Dress",
         hinh: ["../img/img nữ/Đầm babydoll/1.png", "../img/img nữ/Đầm babydoll/2.png", "../img/img nữ/Đầm babydoll/3.png"],
-        mota: "Viết mô tả",
+        mota: "The C.I.U - Ward Babydoll Dress, featuring silk accents, is a perfect choice for those who adore a cute and feminine style. With its babydoll design, the dress has a loose and flowing silhouette, concealing any abdominal or thigh imperfections.",
         gia: 50
     },
     do8 = {
         id: 8,
-        ten: "Chân váy jean túi L",
+        ten: "Halter Skirt",
         hinh: ["../img/img nữ/chân váy jean túi L/1.png", "../img/img nữ/chân váy jean túi L/2.png","../img/img nữ/chân váy jean túi L/3.png"],
-        mota: "Viết mô tả",
+        mota: "The CIU - Halter Skirt is an L-shaped denim skirt crafted from thick denim fabric, offering versatile styling options with a t-shirt or tank top. This piece effortlessly elevates your street-style outfit, adding dynamism and confidence to your every activity.",
         gia: 30
     },
     do9 = {
         id: 9,
-        ten: "Áo khoác Blazer",
+        ten: "Blazer Jacket",
         hinh: ["../img/img nam/Áo khoác Blazer/1.png", "../img/img nam/Áo khoác Blazer/2.png","../img/img nam/Áo khoác Blazer/3.png"],
-        mota: "Viết mô tả",
+        mota: "A cropped blazer jacket with a notched lapel, pointed collar, long sleeves, and button cuffs. It features flap pockets on both sides and an inner lining pocket. It fastens at the front with a row of buttons.",
         gia: 30
     },
     do10 = {
         id: 10,
-        ten: "Áo khoác vải thun",
+        ten: " Cardian",
         hinh: ["../img/img nam/Áo khoác vải thun/1.png", "../img/img nam/Áo khoác vải thun/2.png","../img/img nam/Áo khoác vải thun/3.png"],
-        mota: "Viết mô tả",
+        mota: "Instant UV protection. Super fine and comfortable to wear",
         gia: 30
     },
     do11 = {
         id: 11,
         ten: "Hoodie",
         hinh: ["../img/img nam/Hoodie/1.png", "../img/img nam/Hoodie/2.png","../img/img nam/Hoodie/3.png"],
-        mota: "Viết mô tả",
+        mota: "A regular fit hoodie sweatshirt made from compact cotton fabric. It features an adjustable attached hood, long sleeves, and a kangaroo pocket at the front. The cuffs and hem are ribbed for a snug fit.",
         gia: 25
     },
     do12 = {
         id: 12,
-        ten: "Áo khoác Kaki",
+        ten: "KaKi Jacket",
         hinh: ["../img/img nam/Áo khoác Kaki/1.png", "../img/img nam/Áo khoác Kaki/2.png","../img/img nam/Áo khoác Kaki/3.png"],
-        mota: "Viết mô tả",
+        mota: "A regular fit shirt-style jacket with a notched lapel, long sleeves, button cuffs, and button closure. It has two flap pockets at the chest and is silver-colored.",
         gia: 20
     },
     do13 = {
         id: 13,
-        ten: "Áo thun cổ tay tròn",
+        ten: "AIRism Shirt",
         hinh: ["../img/img nam/Áo thun cổ tay tròn/1.png", "../img/img nam/Áo thun cổ tay tròn/3.png"],
-        mota: "Viết mô tả",
+        mota: "The smooth 'AIRism' fabric has a cotton-like appearance. Its loose-fitting design and slightly oversized sleeves provide a comfortable look and feel.",
         gia: 15
     },
     do14 = {
         id: 14,
-        ten: "Sơ mi sọc tay dài",
+        ten: "Long-sleeved Shirt",
         hinh: ["../img/img nam/Sơ mi sọc tay dài/1.png", "../img/img nam/Sơ mi sọc tay dài/2.png","../img/img nam/Sơ mi sọc tay dài/3.png"],
-        mota: "Viết mô tả",
+        mota: "The CIU men's dress shirt is crafted from a soft, breathable fabric that effectively wicks away sweat. The product features meticulous and refined stitching.",
         gia: 20
     },
     do15 = {
         id: 15,
-        ten: "Quần sort",
+        ten: "Terry Short",
         hinh: ["../img/img nam/Quần sort/1.png", "../img/img nam/Quần sort/2.png","../img/img nam/Quần sort/3.png"],
-        mota: "Viết mô tả",
+        mota: "French Terry, 100% Cotton: Moisture-wicking, excellent moisture management, soft and gentle, good stretch and elasticity, environmentally friendly.",
         gia: 15
     },
     do16 = {
         id: 16,
-        ten: "Áo sơ mi tay dài",
+        ten: "Rosy Long-sleeved",
         hinh: ["../img/img nam/Áo sơ mi tay dài/1.png", "../img/img nam/Áo sơ mi tay dài/2.png","../img/img nam/Áo sơ mi tay dài/3.png"],
-        mota: "Viết mô tả",
+        mota: "Rose Fiber Twill: 55% Rose, 42% Polyester, 3% Spandex - Excellent stretch, antimicrobial, soft and smooth, UV protection, wrinkle-resistant.",
         gia: 25
     }
 ];
@@ -134,13 +132,13 @@ function showSlide(n) {
     currentSlide = n;
 }
 
-// function prev() {
-//     showSlide(currentSlide - 1);
-// };
+function prev() {
+    showSlide(currentSlide - 1);
+};
 
-// function next() {
-//     showSlide(currentSlide + 1);
-// };
+function next() {
+    showSlide(currentSlide + 1);
+};
 
 document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll(".slider .slide img");
