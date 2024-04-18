@@ -359,7 +359,7 @@ function checkEmail() {
 }
 
 function Dangky() {
-    if (checkTenDN() && checkMatKhau() && checkMatKhauRe() && checkHoTen() && checkNgaySinh() && checkSDT() && checkEmail()) {
+    if ( checkMatKhau() && checkMatKhauRe() && checkHoTen() && checkNgaySinh() && checkSDT() && checkEmail()) {
         let email = document.getElementById("emailDK").value;
         let mk = document.getElementById("password").value;
         localStorage.setItem('emailDK', email);
