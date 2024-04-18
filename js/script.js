@@ -377,10 +377,10 @@ function Dangnhap() {
         alert("Login successful");
         $("#myModal").modal("hide");
         window.open("../html/home.html");
-        return true;
+        
     } else {
         alert("Invalid email or password");
-        return false;
+        
     }
 }
 
