@@ -338,7 +338,7 @@ footer ul.social li a:hover {
 }
 
 section.banner-product {
-    background-image: url('../img/product-bn.jpg');
+    background-image: url('../img/installation.50c59fdd.jpg');
     height: 250px;
     width: 100%;
 }
@@ -680,10 +680,17 @@ form {
 
 #buy-button {
     right: calc(5% + 5px);
+    width: 75px;
+    background-color: rgb(204,204,108);
+    color: #333;
+    border-color: #333;
 }
 
 #reset-button {
     right: 10px;
+    background-color: rgb(204,204,108);
+    color: #333;
+    border-color: #333;
 }
 
 .about-us .section1 a:hover {
