@@ -239,24 +239,7 @@ function themsl(id) {
     sessionStorage.setItem(id, JSON.stringify(cart))
 }
 
-function checkTenDN() {
-    let ten = document.getElementById("username").value;
-    if (ten == "") {
-        document.getElementById("ertendn").innerHTML = "Username must not be empty";
-        return false;
-    }
-    else {
-        let patten = /^\w{3,16}/;
-        if (patten.test(ten)) {
-            document.getElementById("ertendn").innerHTML = "*";
-            return true;
-        } else {
-            document.getElementById("ertendn").innerHTML = "Wrong syntax";
-            return false;
-        }
-    }
 
-}
 
 function checkMatKhau() {
     let mk = document.getElementById("password").value;
