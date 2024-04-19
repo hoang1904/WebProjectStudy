@@ -206,20 +206,20 @@ function hienthi(id) {
 //    }, 50);
 //}
 
-//function fadeOut(element, callback) {
+// function fadeOut(element, callback) {
 //    var op = 1;  // initial opacity
 //    var timer = setInterval(function () {
-        if (op <= 0.1) {
-            clearInterval(timer);
-            element.style.display = 'none';
-            if (callback) {
-                callback();
-            }
-        }
-        element.style.opacity = op;
-        op -= op * 0.1;
+//         if (op <= 0.1) {
+//             clearInterval(timer);
+//             element.style.display = 'none';
+//             if (callback) {
+//                 callback();
+//             }
+//         }
+//         element.style.opacity = op;
+//         op -= op * 0.1;
 //    }, 50);
-//}
+// }
 
 
 function plus() {
@@ -283,7 +283,7 @@ function checkHoTen() {
         document.getElementById("erhoten").innerHTML = "Fullname must not be empty";
         return false;
     } else {
-        let pathoten = /^([A-Z]{1}[a-z]*\s)*([A-Z]{1}[a-z]*)+$/;
+        let pathoten = /^([A-Z][a-z]*\s)*([A-Z]{1}[a-z]*)+$/;
         if (pathoten.test(hoTen)) {
             document.getElementById("erhoten").innerHTML = "*";
             return true;
@@ -359,11 +359,10 @@ function Dangnhap() {
     if (email === storedEmail && mk === storedPassword) {
         alert("Login successful");
         $("#myModal").modal("hide");
-        window.open("../html/home.html");
-        
+        return true;
     } else {
         alert("Invalid email or password");
-        
+        return false;
     }
 }
 
@@ -429,7 +428,7 @@ function buy() {
     if (cart.rows.length > 1) {
         alert("Buy successful");
     } else {
-        alert("Empty cart");
+            alert("Empty cart");
     }
 }
 
