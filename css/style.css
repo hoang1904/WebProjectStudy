@@ -115,7 +115,7 @@ header nav ul li a {
 }
 
 header .form-search {
-    position: relative;
+    
     position: absolute;
     z-index: 2;
     width: 100%;
